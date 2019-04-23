@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_send_sms">
+
+    <EditText
+        android:id="@+id/etNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvNo"
+        android:layout_alignStart="@+id/etMsg"
+        android:layout_alignBottom="@+id/tvNo"
+        android:ems="10"
+
+        android:inputType="number"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <EditText
+        android:id="@+id/etMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSendMsg"
+        android:layout_alignStart="@+id/btnSendMsg"
+        android:layout_marginBottom="98dp"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <TextView
+        android:id="@+id/tvNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="59dp"
+        android:text="Contact No."
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etMsg"
+        android:layout_alignStart="@+id/tvNo"
+        android:layout_alignBottom="@+id/etMsg"
+        android:text="Message"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <Button
+        android:id="@+id/btnSendMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="163dp"
+        android:onClick="msgSend"
+        android:text="Send"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+</RelativeLayout>
